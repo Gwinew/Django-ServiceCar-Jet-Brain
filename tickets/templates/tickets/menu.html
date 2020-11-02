@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Page</title>
+</head>
+<body>
+<ul>
+{% for key, value in get_ticket.items %}
+<li>
+    <a target="_blank" href="/get_ticket/{{key}}">{{value}}</a>
+</li>
+{% endfor %}
+</ul>
+</body>
+</html>
